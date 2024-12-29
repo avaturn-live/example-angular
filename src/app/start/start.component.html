@@ -1,0 +1,18 @@
+<main class="main">
+  <h1>First page</h1>
+  <div class="avatar-wrapper" ngModel #avatar></div>
+  <div class="avatar-popup" [class.open]="enablePIP">
+    <div class="avatar-popup__container">
+      <div class="avatar-popup__actions">
+        <button mat-raised-button (click)="switchView()">Close</button>
+      </div>
+      <div class="avatar-wrapper" ngModel #avatarPopup></div>
+    </div>
+  </div>
+  <div class="avatar-actions">
+    <button [disabled]="inited || loading" (click)="initAvatar()">Init</button>
+    <button [disabled]="!inited || loading" (click)="switchView()">
+      Open dialog
+    </button>
+  </div>
+</main>
