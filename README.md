@@ -1,59 +1,46 @@
-# AngularExample
+# Angular Example
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+This repository contains example code written in Angular. Below are instructions to get started with the project.
 
-## Development server
+## Getting Started
 
-To start a local development server, run:
+1. **Clone the Repository**  
+   Clone the repository to your local machine:
 
-```bash
-ng serve
-```
+   ```bash
+   git clone git@github.com:avaturn-live/example-angular.git
+   ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+   Navigate to the project directory:
 
-## Code scaffolding
+   ```bash
+   cd example-angular
+   ```
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+2. **Install Dependencies**  
+   Ensure that Node.js (recommended LTS version) and npm are installed. Then, install the project dependencies:
 
-```bash
-ng generate component component-name
-```
+   ```bash
+   npm install
+   ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+3. **Create an Environment File**  
+   Create a `.env` file in the root directory and add the following variable:
 
-```bash
-ng generate --help
-```
+   ```env
+   AVATURN_LIVE_TOKEN=your_avaturn_live_token
+   ```
 
-## Building
+   The `AVATURN_LIVE_TOKEN` variable is required for the application to work. You can find detailed information about obtaining this token in the [Avaturn Live API documentation](https://docs.avaturn.live).
 
-To build the project run:
+4. **Run the Project**  
+   To run the application in development mode, execute the following command:
+   ```bash
+   npm run start
+   ```
+   The application will be available at [http://localhost:4200](http://localhost:4200).
 
-```bash
-ng build
-```
+## Additional Information
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- If you have questions about working with the project, refer to the [Avaturn Live documentation](https://docs.avaturn.live).
+- For questions and suggestions, please create an issue in this repository.
